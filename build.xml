@@ -57,7 +57,7 @@
 
 	<!-- Package the build into a WAR File after compilation & testing tasks are completed.-->
 	<target name="war" depends="compile">
-		<war destfile="${temp.dir}/tomcat-loadgen.war" webxml="WebContent/WEB-INF/web.xml">
+		<war destfile="${temp.dir}/tomcat-helloworld.war" webxml="WebContent/WEB-INF/web.xml">
 			<fileset dir="WebContent" >
 				<include name="*/*.xml" />
 				<include name="**/*.jar" />
